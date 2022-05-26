@@ -5,7 +5,7 @@ A simple package to assist you in organizing your endpoints for your minimal API
 To get started you just need a class implementing the interface IEndpoint.
 
 ```csharp
-using EndpointsMapper.Core;
+using EndpointsMapper.Types;
 
 public class MyEndpoint : IEndpoint
 {
@@ -21,19 +21,13 @@ public class MyEndpoint : IEndpoint
 
 Now you just need to add the registration in your startup class with:
 
-* For mapping from the current project
-
-```csharp
-app.MapEndpoints();
-```
-
 * For mapping from the assembly of an specific type or types
 
 ```csharp
-app.MapEndpoints(typeof(MarkerType));
+app.MapEndpoints(typeof(Program));
 ```
 
-`MarkerType` is a class where your endpoints are located.
+`Program` is a class where your endpoints are located.
 Note that this method accepts multiple types.
 
 * For mapping from an specifc assembly or assemblies

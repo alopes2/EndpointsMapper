@@ -7,24 +7,15 @@ namespace EndpointsMapper.Extensions;
 public static class EndpointsExtensions
 {
     /// <summary>
-    /// Map endpoints from the current executing assembly
-    /// </summary>
-    public static void MapEndpoints(this WebApplication app)
-    {
-        app.MapEndpointsFromAssemblies(Assembly.GetExecutingAssembly());
-    }
-
-    /// <summary>
     /// Map endpoints from the assembly of the specified types
     /// </summary>
     /// <param name="types">Types located in the assembly where the endpoints are implemented</param>
-    public static void MapEndpointsFromAssemblyContaining(this WebApplication app, params Type[] types)
+    public static void MapEndpoints(this WebApplication app, params Type[] types)
     {
         // Get the assemblies from types and call MapEndpointsfromassemblies
         var assemblies = types.Select(t => t.Assembly).ToArray();
         app.MapEndpointsFromAssemblies(assemblies);
     }
-
 
     /// <summary>
     /// Map endpoints from the specified assemblies
