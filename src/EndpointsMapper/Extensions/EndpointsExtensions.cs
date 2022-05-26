@@ -1,8 +1,8 @@
 using System.Reflection;
-using EndpointsMapper.Core.Types;
+using EndpointsMapper.Types;
 using Microsoft.AspNetCore.Builder;
 
-namespace MapEndpoint.Api.Extensions;
+namespace EndpointsMapper.Extensions;
 
 public static class EndpointsExtensions
 {
@@ -12,15 +12,6 @@ public static class EndpointsExtensions
     public static void MapEndpoints(this WebApplication app)
     {
         app.MapEndpointsFromAssemblies(Assembly.GetExecutingAssembly());
-    }
-
-    /// <summary>
-    /// Map endpoints from the assembly of the specified type
-    /// </summary>
-    /// <param name="types">Type located in the assembly where the endpoints are implemented</param>
-    public static void MapEndpointsContaining(this WebApplication app, Type type)
-    {
-        app.MapEndpointsFromAssemblyContaining(type);
     }
 
     /// <summary>

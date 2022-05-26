@@ -1,6 +1,6 @@
 using Microsoft.AspNetCore.Builder;
 
-namespace EndpointsMapper.Core.Types;
+namespace EndpointsMapper.Types;
 
 public interface IEndpoint
 {
