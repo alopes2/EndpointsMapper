@@ -1,0 +1,35 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30114.105
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{ED47940E-3A60-46F7-A329-9E6B72412E3F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EndpointsMapper", "src\EndpointsMapper\EndpointsMapper.csproj", "{25032ECD-17C6-46D5-9024-ECEE3B066E75}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EndpointsMapper.Core", "src\EndpointsMapper.Core\EndpointsMapper.Core.csproj", "{A77C871E-9982-48EA-8AD1-865934231E8F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{25032ECD-17C6-46D5-9024-ECEE3B066E75}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{25032ECD-17C6-46D5-9024-ECEE3B066E75}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{25032ECD-17C6-46D5-9024-ECEE3B066E75}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{25032ECD-17C6-46D5-9024-ECEE3B066E75}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A77C871E-9982-48EA-8AD1-865934231E8F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A77C871E-9982-48EA-8AD1-865934231E8F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A77C871E-9982-48EA-8AD1-865934231E8F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A77C871E-9982-48EA-8AD1-865934231E8F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{25032ECD-17C6-46D5-9024-ECEE3B066E75} = {ED47940E-3A60-46F7-A329-9E6B72412E3F}
+		{A77C871E-9982-48EA-8AD1-865934231E8F} = {ED47940E-3A60-46F7-A329-9E6B72412E3F}
+	EndGlobalSection
+EndGlobal
+EndpointsMapper
