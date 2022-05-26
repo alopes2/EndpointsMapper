@@ -6,7 +6,7 @@
     <Authors>Andre Lopes</Authors>
     <RepositoryUrl>https://github.com/alopes2/EndpointsMapper</RepositoryUrl>
     <RespositoryType>git</RespositoryType>
-    <PackageReadmeFile>../../README.md</PackageReadmeFile>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
     <Description>
       This is a simple package to help you to map your endpoints from your minimal API.
 
@@ -26,6 +26,10 @@
 
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.App" Version="2.2.8" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="../../README.md" Pack="true" PackagePath="\"/>
   </ItemGroup>
 
 </Project>
