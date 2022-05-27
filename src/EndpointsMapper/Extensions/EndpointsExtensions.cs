@@ -12,7 +12,6 @@ public static class EndpointsExtensions
     /// <param name="types">Types located in the assembly where the endpoints are implemented</param>
     public static void MapEndpoints(this WebApplication app, params Type[] types)
     {
-        // Get the assemblies from types and call MapEndpointsfromassemblies
         var assemblies = types.Select(t => t.Assembly).ToArray();
         app.MapEndpointsFromAssemblies(assemblies);
     }
