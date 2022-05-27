@@ -2,7 +2,7 @@
   <PropertyGroup>
     <TargetFramework>net6.0</TargetFramework>
     <PackageId>EndpointsMapper</PackageId>
-    <Version>1.0.1-RC2</Version>
+    <Version>1.0.1</Version>
     <Authors>Andre Lopes</Authors>
     <RepositoryUrl>https://github.com/alopes2/EndpointsMapper</RepositoryUrl>
     <RespositoryType>git</RespositoryType>
@@ -10,11 +10,7 @@
     <Description>
       This is a simple package to help you to map your endpoints from your minimal API.
 
-      To map endpoints, you just need to create a class and implement the `IEndpoint` interface.
-
-      Then you just need to call `app.MapEndpoints()` in your startup class to map all your endpoints in the current assembly.
-
-      If you want to map endpoints from another assembly, you just need to call `app.MapEndpoints(typeof(MyType)) `app.MapEndpoints(assembly)` where assembly is the assembly where you want to map your endpoints.
+      For more information, please check the project's repository.
     </Description>
   </PropertyGroup>
 
